@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Tron - DC101 Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Type-Tron</h1>
+            <p>Test your typing speed and accuracy!</p>
+        </header>
+
+        <main>
+            <!-- Instructions Section -->
+            <section id="instructions" class="instructions">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>Click "Start Test" to begin</li>
+                    <li>Type the displayed text as quickly and accurately as possible</li>
+                    <li>Your WPM (Words Per Minute) and accuracy will be calculated</li>
+                    <li>Try to beat your previous score!</li>
+                </ul>
+            </section>
+
+            <!-- Game Section -->
+            <section id="game-section" class="game-section">
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Time:</span>
+                        <span id="timer" class="stat-value">60s</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">WPM:</span>
+                        <span id="wpm" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Accuracy:</span>
+                        <span id="accuracy" class="stat-value">100%</span>
+                    </div>
+                </div>
+
+                <div id="text-display" class="text-display">
+                    <p id="sample-text">Click "Start Test" to begin your typing challenge. This sample text will be replaced with a random passage for you to type. Get ready to test your typing skills!</p>
+                </div>
+
+                <div class="input-section">
+                    <textarea
+                        id="typing-input"
+                        placeholder="Start typing here..."
+                        disabled
+                    ></textarea>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">Start Test</button>
+                    <button id="restart-btn" class="btn btn-secondary" disabled>Restart</button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results" class="results hidden">
+                <h2>🎉 Test Complete!</h2>
+                <div class="final-stats">
+                    <div class="final-stat">
+                        <span class="final-label">Final WPM:</span>
+                        <span id="final-wpm" class="final-value">0</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-label">Accuracy:</span>
+                        <span id="final-accuracy" class="final-value">100%</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-label">Time Taken:</span>
+                        <span id="final-time" class="final-value">60s</span>
+                    </div>
+                </div>
+                <p id="performance-message" class="performance-message"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created for DC101 Web Development Project | Jonalyn Avila</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
