@@ -1,9 +1,10 @@
-# 🤖 Type-Tron - Typing Speed Test
+# 😺 Copy Cat! Typing Test
 
-A modern, responsive browser-based typing speed test game built for the DC101 Web Development course. Challenge the Type-Tron AI to test your typing skills, improve your WPM (Words Per Minute), and track your accuracy in real-time!
+A modern, responsive browser-based typing speed test game built for the DC101 Web Development course. Train with Copy Cat, an energetic study buddy that mirrors your keystrokes, to improve your WPM (Words Per Minute) and accuracy in real-time!
 
 ## 🎮 Game Features
 
+- **Animated Copy Cat Companion**: Idle cat gif swaps to a typing gif whenever you press keys
 - **Real-time WPM Calculation**: See your typing speed update as you type
 - **Accuracy Tracking**: Monitor your typing accuracy percentage
 - **Visual Feedback**: Characters highlight in green (correct) or red (incorrect)
@@ -13,18 +14,26 @@ A modern, responsive browser-based typing speed test game built for the DC101 We
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **Performance Feedback**: Get encouraging messages based on your results
 - **Restart Functionality**: Practice multiple times to improve
+- **Automatic History**: Copy Cat stores your last 7 days of scores locally and clears anything older
+- **Flexible Timers**: Switch between 15s blitz, 30s sprint, or 60s marathon modes with a dropdown
+
+## ⚙️ Performance & Scalability
+
+- **Web Worker (Multi-threading)**: Offloads WPM and accuracy calculations to `statsWorker.js`, keeping the UI thread responsive on low-powered devices.
+- **requestAnimationFrame Rendering**: Text highlighting and progress bar animations are scheduled with `requestAnimationFrame` to avoid layout thrashing.
+- **Optimized DOM Updates**: Batched visual updates ensure smooth animations even during rapid typing bursts.
 
 ## 🚀 Live Demo
 
-[Challenge Type-Tron](https://jonalyn-avila.github.io/DC101_TypingTest_AvilaJonalyn/) *(Replace with your actual GitHub Pages URL after deployment)*
+[Play Copy Cat! Typing Test](https://jonalyn-avila.github.io/DC101_TypingTest_AvilaJonalyn/) *(Replace with your actual GitHub Pages URL after deployment)*
 
 ## 📋 How to Play
 
-1. Click "Start Test" to challenge Type-Tron
+1. Click "Start Test" to wake Copy Cat from a cozy catnap
 2. Type the displayed text as quickly and accurately as possible
 3. Your WPM and accuracy will update in real-time
 4. Race against the 60-second timer
-5. View your final results and see if you can defeat the AI
+5. View your final results and see if you can keep up with Copy Cat
 6. Click "Restart" to try again and beat your score!
 
 ## 🛠️ Technologies Used
@@ -33,18 +42,26 @@ A modern, responsive browser-based typing speed test game built for the DC101 We
 - **CSS3**: Modern styling with CSS variables, flexbox, and responsive design
 - **JavaScript (ES6+)**: Game logic, DOM manipulation, and event handling
 - **Google Fonts**: Inter font family for modern typography
+- **Web Storage API**: Keeps a private, device-only history of recent scores
 
 ## 📁 Project Structure
 
 ```
-DC101_TypeTron_AvilaJonalyn/
-├── index.html          # Main HTML file with Type-Tron game structure
+DC101_CopyCat_AvilaJonalyn/
+├── index.html          # Main HTML file with Copy Cat! game structure
 ├── style.css           # CSS styling and responsive design
 ├── script.js           # JavaScript game logic and functionality
+├── statsWorker.js      # Web Worker that offloads stats calculations
 ├── README.md           # Project documentation
 └── assets/             # Folder for images, sounds, and other media
     └── README.md       # Assets documentation
 ```
+
+## 🗂 Result History
+
+- Every completed round is stored in `localStorage` with a timestamp, WPM, accuracy, and time taken.
+- Entries older than **7 days** are automatically purged on load or whenever a new score is saved, keeping the log lightweight.
+- The log never leaves the browser—perfect for privacy and for tracking your Copy Cat streak locally.
 
 ## 🏃‍♀️ Installation & Setup
 
@@ -142,10 +159,10 @@ This project was created as part of the DC101 Web Development course. All rights
 ✅ **User Experience**: Intuitive, engaging, and polished interface
 ✅ **GitHub Repository**: Proper naming, commit history, and structure
 ✅ **README Documentation**: Clear, complete, and professional
-✅ **Creativity & Theme**: Unique lightning-themed design
+✅ **Creativity & Theme**: Playful animated cat companion experience
 ✅ **Bonus Features**: Real-time feedback, progress tracking, performance analysis
 
 ---
 
-**Defeat the Type-Tron!** 🤖🎯
+**Keep up with Copy Cat!** 😺🎯
 
