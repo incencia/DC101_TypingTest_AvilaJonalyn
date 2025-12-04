@@ -37,6 +37,8 @@ class TypingTest {
         this.catTimeout = null;
         this.catIdleSrc = 'assets/idle_cat.gif';
         this.catTypingSrc = 'assets/typing_cat.gif';
+        this.idleDelay = 750;
+        this.isCatTyping = false;
         this.workerSupported = typeof Worker !== 'undefined';
         this.statsWorker = this.workerSupported ? new Worker('statsWorker.js') : null;
         this.latestStats = { wpm: 0, accuracy: 100 };
@@ -348,11 +350,14 @@ class TypingTest {
 
     animateCatTyping() {
         if (!this.catImage) return;
-        this.catImage.src = this.catTypingSrc;
+        if (!this.isCatTyping) {
+            this.catImage.src = this.catTypingSrc;
+            this.isCatTyping = true;
+        }
         if (this.catTimeout) {
             clearTimeout(this.catTimeout);
         }
-        this.catTimeout = setTimeout(() => this.showIdleCat(), 1200);
+        this.catTimeout = setTimeout(() => this.showIdleCat(), this.idleDelay);
     }
 
     showIdleCat() {
@@ -362,6 +367,7 @@ class TypingTest {
             this.catTimeout = null;
         }
         this.catImage.src = this.catIdleSrc;
+        this.isCatTyping = false;
     }
 
     requestStatsUpdate() {
