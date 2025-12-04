@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Cat! Typing Test - DC101 Project</title>
+    <title>Type-Tron - DC101 Project</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>😺 Copy Cat! Typing Test</h1>
-            <p>Match the speed of the adorable Copy Cat bot and sharpen your accuracy.</p>
+            <h1>🤖 Type-Tron</h1>
+            <p>Test your typing speed and accuracy!</p>
         </header>
 
         <main>
@@ -19,25 +19,15 @@
             <section id="instructions" class="instructions">
                 <h2>How to Play</h2>
                 <ul>
-                    <li>Click "Start Test" to wake Copy Cat from a cozy catnap</li>
+                    <li>Click "Start Test" to begin</li>
                     <li>Type the displayed text as quickly and accurately as possible</li>
-                    <li>Watch Copy Cat animate when you type and rest when you pause</li>
-                    <li>Improve your WPM (Words Per Minute) and accuracy score each round</li>
+                    <li>Your WPM (Words Per Minute) and accuracy will be calculated</li>
+                    <li>Try to beat your previous score!</li>
                 </ul>
             </section>
 
             <!-- Game Section -->
             <section id="game-section" class="game-section">
-                <div class="cat-display">
-                    <img
-                        id="cat-anim"
-                        src="assets/idle_cat.gif"
-                        alt="Copy Cat waiting to type"
-                        loading="lazy"
-                    >
-                    <p class="cat-caption">Copy Cat is idle... start typing to see tiny paws fly! 🐾</p>
-                </div>
-
                 <div class="stats">
                     <div class="stat-item">
                         <span class="stat-label">Time:</span>
@@ -70,19 +60,8 @@
                 </div>
 
                 <div class="controls">
-                    <div class="duration-control">
-                        <label for="duration-select">Test Length</label>
-                        <select id="duration-select" aria-label="Select typing test duration">
-                            <option value="60" selected>60 seconds · Marathon</option>
-                            <option value="30">30 seconds · Sprint</option>
-                            <option value="15">15 seconds · Blitz</option>
-                        </select>
-                    </div>
-                    <div class="button-group">
-                        <button id="start-btn" class="btn btn-primary">Start Test</button>
-                        <button id="stop-btn" class="btn btn-danger" disabled>Stop</button>
-                        <button id="restart-btn" class="btn btn-secondary" disabled>Restart</button>
-                    </div>
+                    <button id="start-btn" class="btn btn-primary">Start Test</button>
+                    <button id="restart-btn" class="btn btn-secondary" disabled>Restart</button>
                 </div>
             </section>
 
@@ -105,16 +84,6 @@
                 </div>
                 <p id="performance-message" class="performance-message"></p>
             </section>
-
-            <!-- History Section -->
-            <section id="history" class="history-section">
-                <div class="history-header">
-                    <h2>📚 Copy Cat Log (Last 7 Days)</h2>
-                    <p>Results reset automatically after one week.</p>
-                </div>
-                <p id="history-empty" class="history-empty hidden">No sessions yet. Beat Copy Cat to start a streak!</p>
-                <ul id="history-list" class="history-list" aria-live="polite"></ul>
-            </section>
         </main>
 
         <footer>
@@ -125,4 +94,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
