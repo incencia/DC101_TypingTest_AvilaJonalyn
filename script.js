@@ -50,12 +50,12 @@ class TypingTest {
 
         // Sample texts
         this.sampleTexts = [
-            'She sells seashells by the seashore, shimmering shells she surely shows. Sally swiftly shifted seven slick shells, sending shimmering reflections along the sandy shoreline.',
-            'Peter Piper picked a peck of pickled peppers, but if Peter Piper picked a peck of pickled peppers, how many pecks of pickled peppers did Peter Piper pick before packing them properly?',
-            'How can a clam cram in a clean cream can? Careful clams cleverly climb, clutching creamy canisters close while clattering currents crash constantly against the cliffs.',
-            "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn't fuzzy, was he? Fuzzy wondered why whiskers wouldn't wave when whistling winds whisked through the woods.",
-            'Betty Botter bought a bit of better butter, but she said the butter is bitter. If I bake this bitter butter, it might make my batter bitter, so I will buy a bit of better butter to make it better.',
-            'Six slippery snails slid silently seaward seeking shelter from sudden storms. Should seven slick sailors sail swiftly southward, see how the snails scatter and slide.'
+            'The quick brown fox jumps over the lazy dog. This pangram contains every letter of the alphabet at least once, making it perfect for typing practice and testing keyboard skills.',
+            'In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat.',
+            'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness.',
+            "To be or not to be, that is the question. Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles and by opposing end them.",
+            "All happy families are alike; each unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys' house. The wife had discovered that the husband was carrying on an intrigue with a French girl.",
+            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world."
         ];
 
         this.init();
