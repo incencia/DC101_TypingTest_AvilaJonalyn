@@ -4,18 +4,18 @@
 
 /* CSS Variables for consistent theming */
 :root {
-    --primary-color: #c084fc;
-    --primary-hover: #a855f7;
-    --secondary-color: #f9a8d4;
-    --success-color: #34d399;
-    --warning-color: #fcd34d;
-    --danger-color: #fb7185;
-    --background-color: #fdf2ff;
+    --primary-color: #5c8a64;
+    --primary-hover: #47684d;
+    --secondary-color: #c2d5b8;
+    --success-color: #6bbf8f;
+    --warning-color: #f0d48a;
+    --danger-color: #e57f6c;
+    --background-color: #f6f2e9;
     --card-background: #ffffff;
-    --text-primary: #322946;
-    --text-secondary: #6b5b7a;
-    --border-color: #f3e8ff;
-    --shadow: 0 8px 24px rgba(211, 174, 255, 0.35);
+    --text-primary: #2f2b1f;
+    --text-secondary: #6c6854;
+    --border-color: #e2d8c7;
+    --shadow: 0 8px 24px rgba(92, 138, 100, 0.18);
     --border-radius: 12px;
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: var(--font-family);
-    background: radial-gradient(circle at top, #ffe4f1 0%, var(--background-color) 45%, #fef3ff 100%);
+    background: radial-gradient(circle at top, #fdf7dd 0%, var(--background-color) 60%, #f0ead4 100%);
     color: var(--text-primary);
     line-height: 1.6;
     min-height: 100vh;
@@ -56,7 +56,7 @@ header {
 header h1 {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), #f472b6);
+    background: linear-gradient(135deg, var(--primary-color), #c8b88a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -124,8 +124,8 @@ header p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #fff7fb;
-    border: 2px dashed #f9a8d4;
+    background: #f1f7ef;
+    border: 2px dashed #c9dcbc;
     border-radius: var(--border-radius);
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -237,7 +237,7 @@ header p {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(90deg, #a4c49c, var(--primary-color));
     width: 0%;
     transition: width 0.3s ease;
 }
@@ -320,6 +320,17 @@ header p {
     background: #4b5563;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: #f43f5e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 113, 133, 0.3);
 }
 
 .btn:disabled {
