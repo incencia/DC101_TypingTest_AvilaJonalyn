@@ -23,10 +23,6 @@ A modern, responsive browser-based typing speed test game built for the DC101 We
 - **requestAnimationFrame Rendering**: Text highlighting and progress bar animations are scheduled with `requestAnimationFrame` to avoid layout thrashing.
 - **Optimized DOM Updates**: Batched visual updates ensure smooth animations even during rapid typing bursts.
 
-## 🚀 Live Demo
-
-[Play Copy Cat! Typing Test](https://jonalyn-avila.github.io/DC101_TypingTest_AvilaJonalyn/) *(Replace with your actual GitHub Pages URL after deployment)*
-
 ## 📋 How to Play
 
 1. Click "Start Test" to wake Copy Cat from a cozy catnap
@@ -65,10 +61,6 @@ DC101_CopyCat_AvilaJonalyn/
 
 ## 🏃‍♀️ Installation & Setup
 
-### Option 1: Play Online (Recommended)
-Simply visit the [live demo](https://jonalyn-avila.github.io/DC101_TypingTest_AvilaJonalyn/) and start playing!
-
-### Option 2: Run Locally
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/DC101_TypingTest_AvilaJonalyn.git
@@ -145,7 +137,7 @@ This project was created as part of the DC101 Web Development course. All rights
 ## 👨‍💻 Author
 
 **Jonalyn Avila**
-- GitHub: [@jonalyn-avila](https://github.com/jonalyn-avila)
+- GitHub: [@incencia](https://github.com/incencia)
 - Course: DC101 Web Development
 - Project: Individual Work - Mini Arcade Browser Game
 
